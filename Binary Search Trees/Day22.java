@@ -9,8 +9,7 @@ class Node{
     }
 }
 class Solution{
-
-	public static int getHeight(Node root){
+    public static int getHeight(Node root){
       int right=0,left=0;
       if(root.left!=null){
           left=getHeight(root.left)+1; 
@@ -19,7 +18,7 @@ class Solution{
           right=getHeight(root.right)+1;
       }
       return (right > left ? right:left);
-    }
+      }
 
     public static Node insert(Node root,int data){
         if(root==null){
@@ -38,7 +37,7 @@ class Solution{
             return root;
         }
     }
-	 public static void main(String args[]){
+     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int T=sc.nextInt();
         Node root=null;
